@@ -1,0 +1,10 @@
+*.swp
+node_modules/
+.DS_Store
+build
+.idea
+.tmp
+*.iml
+*.log
+*.swp
+.vscode
