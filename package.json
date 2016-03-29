@@ -1,0 +1,14 @@
+{
+  "name": "vue-ui",
+  "version": "1.0.0",
+  "description": "vue ui components ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tooling build -u vue --clean",
+    "watch": "tooling watch -u vue",
+    "deploy": "npm run build && gh-pages -d build"
+  },
+  "author": "crs0910 <crs0910@icloud.com> (https://github.com/qusiba)",
+  "license": "MIT"
+}
