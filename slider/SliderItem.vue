@@ -1,5 +1,5 @@
 <template lang="jade">
-    li.slider-item(:style="itemStyle")
+    li.slider-item(:style="{'width': `${100 / this.count}%`}")
       img(:src="item.src", :alt="item.alt")
 </template>
 
@@ -14,11 +14,6 @@
       item: {
         type: Object,
         required: true
-      }
-    },
-    computed: {
-      itemStyle () {
-        return { 'width': 100 / this.count + '%' }
       }
     }
   }

@@ -1,6 +1,6 @@
 <template lang="jade">
 .slider(@mouseover="pause && pausePlay()", @mouseout="pause && goPlay()")
-  ul(:style="ulStyle")
+  ul(:style="{'width': `${this.count * 100}%`, 'left': `${-100 * this.current}%`}")
     slider-item(v-for="item in items", :count="count", :item="item")
   slider-dots(v-if="dots", :count="count", :current="current", :turn="turn")
   slider-arrows(v-if="arrows", :turn="turn")
@@ -47,14 +47,6 @@
         type: Boolean,
         required: false,
         default: true
-      }
-    },
-    computed: {
-      ulStyle () {
-        return {
-          width: this.count * 100 + '%',
-          left: -100 * this.current + '%'
-        }
       }
     },
     methods: {

@@ -1,7 +1,7 @@
 <template lang="jade">
     .slider-arrows-wrap
-      span.slider-arrow.slider-arrow-left(@click="turn(-1)") <
-      span.slider-arrow.slider-arrow-right(@click="turn(1)") >
+      span.slider-arrow.slider-arrow-left(@click="turn(-1)") &lt;
+      span.slider-arrow.slider-arrow-right(@click="turn(1)") &gt;
 </template>
 
 <script>

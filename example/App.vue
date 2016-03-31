@@ -1,10 +1,10 @@
 <template lang="jade">
-div
+  div
     slider(:items="items")
 </template>
 
 <script>
-  import Slider from './components/Slider'
+  import Slider from '../slider/Slider'
   export default {
     data () {
       return {
