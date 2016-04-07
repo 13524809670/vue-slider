@@ -2,33 +2,13 @@
 Vue 的图片轮播组件 (a vue slider component)，可以直接使用，支持配置
 
 本项目是 [使用 React 实现一个轮播组件](http://qiutc.me/post/%E4%BD%BF%E7%94%A8-React-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E8%BD%AE%E6%92%AD%E7%BB%84%E4%BB%B6.html) 的 Vue 版本。
-
-# example 中的示例
-安利一个快速配置 webpack 的工具：[:hammer:tooling](https://github.com/egoist/tooling)
-```
-// 安装 webpack 工具 tooling
-npm i -g tooling
-
-// 安装本组件依赖
-npm i -d
-
-// 查看例子
-npm run watch:example
-
-// 打包例子
-npm run build:example
-
-// 打包 slider 组件
-npm run build
+# 使用方法
+- 用 npm 安装本组件
 
 ```
-在浏览器打开 http://localhost:3003/。
-
-打包的示例文件在 `builid` 下面。
-
-打包的 `slider` 组件 `js` 在 `dist` 下面。
-
-# 配置示例
+npm i vue-slider
+```
+- 在项目中引用配置示例
 
 ```
 <template lang="jade">
@@ -77,3 +57,27 @@ autoplay | 否 |  是否自动轮播 | true
 dots  | 否 |  是否需要下面的轮播点点位 | true    
 arrows  | 否 |  是否需要左右点击箭头 | true  
 
+# example 中的示例
+安利一个快速配置 webpack 的工具：[:hammer:tooling](https://github.com/egoist/tooling)
+```
+// 安装 webpack 工具 tooling
+npm i -g tooling
+
+// 安装本组件依赖
+npm i -d
+
+// 查看例子
+npm run watch:example
+
+// 打包例子
+npm run build:example
+
+// 打包 slider 组件
+npm run build
+
+```
+在浏览器打开 http://localhost:3003/。
+
+打包的示例文件在 `builid` 下面。
+
+打包的 `slider` 组件 `js` 在 `dist` 下面。
