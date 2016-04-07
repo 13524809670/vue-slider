@@ -1,6 +1,6 @@
 {
   "name": "vue-slider",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a vue slider component",
   "main": "dist/vue-slider.js",
   "repository": {
@@ -18,13 +18,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm tooling.js;cp tooling_slider.js tooling.js;tooling build -u vue --clean",
     "build:example": "rm tooling.js;cp tooling_example.js tooling.js;tooling build -u vue --clean",
-    "watch:example": "rm tooling.js;cp tooling_example.js tooling.js;tooling watch -u vue"
+    "watch:example": "rm tooling.js;cp tooling_example.js tooling.js;tooling watch -u vue -p 3003"
   },
   "files": [
+    "example",
     "LICENCE",
     "README.md",
     "slider",
-    "dist"
+    "dist",
+    "tooling_example.js",
+    "tooling_slider.js"
   ],
   "devDependencies": {
     "eslint": "^2.0.0",

@@ -1,8 +1,7 @@
 <template lang="jade">
   div
-    slider(:items="items")
+    slider(:items="items", :speed="1", :delay="3", :pause="true", :autoplay="true", :dots="true", :arrows="true")
 </template>
-
 <script>
   import Slider from '../slider/Slider'
   export default {
